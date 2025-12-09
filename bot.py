@@ -1,7 +1,3 @@
-# (©)Codexbotz
-# Recode by @mrismanaziz
-# t.me/SharingUserbot & t.me/Lunatic0de
-
 import pyromod.listen
 import sys
 
@@ -43,7 +39,7 @@ class Bot(Client):
         except Exception as a:
             self.LOGGER(__name__).warning(a)
             self.LOGGER(__name__).info(
-                "Bot Rusak, nonton youtube gausah manja"
+                "Yahh botnya mati cayangg, ss aja ya kirim ke aku nanti aku bantu okei"
             )
             sys.exit()
 
@@ -67,7 +63,7 @@ class Bot(Client):
                     f"Pastikan @{self.username} adalah admin di Channel Tersebut, Chat ID untuk FORCE_SUB{key}: {channel_id}"
                 )
                 self.LOGGER(__name__).info(
-                    "Bot Berhenti. Gabung Channel https://t.me/AlteregoNetwork untuk Bantuan"
+                   "Yahh botnya mati cayangg, ss aja ya kirim ke aku nanti aku bantu okei"
                 )
                 sys.exit()
 
@@ -85,13 +81,13 @@ class Bot(Client):
                 f"Pastikan @{self.username} adalah admin di Channel DataBase anda, CHANNEL_ID Saat Ini: {CHANNEL_ID}"
             )
             self.LOGGER(__name__).info(
-                "Bot Rusak, nonton youtube gausah manja"
+                "Yahh botnya mati cayangg, ss aja ya kirim ke aku nanti aku bantu okei"
             )
             sys.exit()
 
         self.set_parse_mode(enums.ParseMode.HTML)
         self.LOGGER(__name__).info(
-            f"[🔥 MENYALA BOSKU 🔥]\n\nBOT Dientot dan Dilahiri oleh @{OWNER}\nJika @{OWNER} Cemburu, yaudah gausah nangis"
+            f"[❤️ MENYALA CAYANGGG ❤️]\n\n ♡ Bot nya udah nyala ya cayang, wopyu mwa mwa mwa ♡ "
         )
 
     async def stop(self, *args):
