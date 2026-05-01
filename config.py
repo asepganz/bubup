@@ -56,7 +56,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 # Pesan Awalan /start
 START_MSG = os.environ.get(
     "START_MESSAGE",
-    "<b>Hi beb {first} sebelum nonton kamu harus join channel yang ada dibawah ini ya beb, setelah join kamu kembali ke bot ini lalu klik coba lagi </b>\n\n<b>Kalo kamu mau nonton tanpa harus cape klik link/bot kamu bisa join grup VIP dengan harga yang sangat murah dan terjangkau ya beb.</b>\n\n<b>Harganya dimulai dari Rp. 25K kamu bisa menikmati ratusan hingga ribuan video sesuai genre tanpa cape klik link/bot</b>\n\n <b>☎️ JOIN : @yyuriikaaa</b>\n<b>📓 TESTIMONI : @vipbyyurika</b>",
+    "<b>Halo {mention} sebelum nonton kamu harus join channel yang ada dibawah ini ya, setelah join kamu kembali ke bot ini lalu klik coba lagi </b>",
 )
 try:
     ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
@@ -66,7 +66,7 @@ except ValueError:
 # Pesan Saat Memaksa Subscribe
 FORCE_MSG = os.environ.get(
     "FORCE_SUB_MESSAGE",
-    "<b>Hi beb {first} sebelum nonton kamu harus join channel yang ada dibawah ini ya beb, setelah join kamu kembali ke bot ini lalu klik coba lagi </b>\n\n<b>Kalo kamu mau nonton tanpa harus cape klik link/bot kamu bisa join grup VIP dengan harga yang sangat murah dan terjangkau ya beb.</b>\n\n<b>Harganya dimulai dari Rp. 25K kamu bisa menikmati ratusan hingga ribuan video sesuai genre tanpa cape klik link/bot</b>\n\n <b>☎️ JOIN : @yyuriikaaa</b>\n<b>📓 TESTIMONI : @vipbyyurika</b>",
+    "<b>Halo {mention} sebelum nonton kamu harus join channel yang ada dibawah ini ya, setelah join kamu kembali ke bot ini lalu klik coba lagi </b>",
 )
 
 # Atur Teks Kustom Anda di sini, Simpan (None) untuk Menonaktifkan Teks Kustom
