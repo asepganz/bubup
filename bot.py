@@ -39,7 +39,7 @@ class Bot(Client):
         except Exception as a:
             self.LOGGER(__name__).warning(a)
             self.LOGGER(__name__).info(
-                "Yahh botnya mati cayangg, ss aja ya kirim ke aku nanti aku bantu okei"
+                "Yahh botnya mati"
             )
             sys.exit()
 
@@ -63,7 +63,7 @@ class Bot(Client):
                     f"Pastikan @{self.username} adalah admin di Channel Tersebut, Chat ID untuk FORCE_SUB{key}: {channel_id}"
                 )
                 self.LOGGER(__name__).info(
-                   "Yahh botnya mati cayangg, ss aja ya kirim ke aku nanti aku bantu okei"
+                   "Yahh botnya mati"
                 )
                 sys.exit()
 
@@ -81,13 +81,13 @@ class Bot(Client):
                 f"Pastikan @{self.username} adalah admin di Channel DataBase anda, CHANNEL_ID Saat Ini: {CHANNEL_ID}"
             )
             self.LOGGER(__name__).info(
-                "Yahh botnya mati cayangg, ss aja ya kirim ke aku nanti aku bantu okei"
+                "Yahh botnya mati"
             )
             sys.exit()
 
         self.set_parse_mode(enums.ParseMode.HTML)
         self.LOGGER(__name__).info(
-            f"[❤️ MENYALA CAYANGGG ❤️]\n\n ♡ Bot nya udah nyala ya cayang, wopyu mwa mwa mwa ♡ "
+            f"[🔥 BOT HAS DEPLOYED 🔥]\n\n ♡ Bot nya udah nyala ya cayang, wopyu mwa mwa mwa ♡ "
         )
 
     async def stop(self, *args):
