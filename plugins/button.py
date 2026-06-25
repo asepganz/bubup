@@ -1,8 +1,6 @@
-# Credits: @mrismanaziz
-# FROM File-Sharing-Man <https://github.com/mrismanaziz/File-Sharing-Man/>
-# t.me/SharingUserbot & t.me/Lunatic0de
 
-from config import FORCE_SUB, BUTTONS_PER_ROW, BUTTONS_JOIN_TEXT
+
+from config import FORCE_SUB, BUTTONS_JOIN_TEXT
 from pyrogram.types import InlineKeyboardButton
 
 
@@ -22,7 +20,8 @@ def start_button(client):
                 url=getattr(client, f"invitelink{key}")
             )
         )
-        if len(current_row) == BUTTONS_PER_ROW:
+        # Diubah menjadi 2 agar JOIN 3 otomatis turun ke bawah
+        if len(current_row) == 2:
             dynamic_buttons.append(current_row)
             current_row = []
 
@@ -49,7 +48,8 @@ def fsub_button(client, message):
                     url=getattr(client, f"invitelink{key}")
                 )
             )
-            if len(current_row) == BUTTONS_PER_ROW:
+            # Diubah menjadi 2 agar JOIN 3 otomatis turun ke bawah
+            if len(current_row) == 2:
                 dynamic_buttons.append(current_row)
                 current_row = []
 
@@ -67,3 +67,4 @@ def fsub_button(client, message):
             pass
 
         return dynamic_buttons
+        
